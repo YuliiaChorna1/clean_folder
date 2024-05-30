@@ -97,7 +97,7 @@ def delete_empty_folders():
 def sort_folder() -> None:
 
     paths = list(root_path.glob("**/*"))
-    paths.sort(reverse=True)
+    # paths.sort(reverse=True)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
         
